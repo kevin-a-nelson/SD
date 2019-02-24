@@ -1,0 +1,35 @@
+1.
+
+range r;
+
+range.pos = 10;
+range.len = 2;
+
+prl = &range.len
+
+prp = &range.pos
+
+
+
+
+
+2. 
+
+int hex[16]; 
+
+while(int i = 0; i < 16; i ++) {
+    hex[i] = i
+}
+
+int matrix[3][5];
+
+
+3. 
+
+int matrix[3][5];
+
+while(int z = 0; i z < 3; z++){
+    while(int x = 0; x < 5; x++) {
+        hex[i][z] = i,z;
+    }
+}
