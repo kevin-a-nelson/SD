@@ -1,0 +1,11 @@
+
+1. Maybe since a unsigned short goes from 1 to 65535. So when it becomes -1, it cycles back to the max which is 65535
+
+2. The addresses correspond to the exponents 
+
+3. 
+
+int z1 = 0
+int z2 = 3
+
+
