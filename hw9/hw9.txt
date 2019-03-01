@@ -1,0 +1,5 @@
+5. 
+
+f1 is a function that doesn't return a value. If 0 does not equal the argument int x it appends " " x onto yaml. Then it runs itself again with the argument x - 1 untill x = 0. If x is 3 then it will append " 3 2 1" onto yaml.
+
+
