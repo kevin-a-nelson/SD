@@ -1,0 +1,11 @@
+1. 
+
+Because it points to the address of the of the value 
+
+2. 
+
+60000000000000000
+
+3. 
+
+The pointer to a sequence of values has more than one idex. 
