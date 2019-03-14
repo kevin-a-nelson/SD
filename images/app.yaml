@@ -1,0 +1,36 @@
+View_1:
+ style:
+   width: 100
+   height: 100
+   marginLeft: 10
+   borderWidth: 10
+   marginTop: 10
+ children: [View_left, View_right]
+View_left:
+ style:
+   width: 60
+   height: 90
+   position: absolute
+   top: 0
+   borderTopLeftRadius: 30
+   borderTopRightRadius: 30
+   backgroundColor: red
+   transform: [ {rotate: '-45deg'} ]
+   left: 10
+View_right:
+ style:
+   width: 60
+   height: 90
+   position: absolute
+   top: 0
+   borderTopLeftRadius: 30
+   borderTopRightRadius: 30
+   backgroundColor: red
+   transform: [ {rotate: '45deg'} ]
+   right: 10
+Text_1:
+  style:
+    fontSize: 40
+    marginLeft: 10
+  pos: 1
+  len: 50
