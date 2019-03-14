@@ -30,7 +30,7 @@ int main()
     unsigned char *data = read_ppm(fname, x, y, range);
 
     for(int i = 0; i < 3*x*y; i++){
-       if (((i+1)%2) == 0)){
+       if (((i+1)%3) == 0){
           data[i] *= 2;
        }
 
