@@ -1,0 +1,6 @@
+1. It changes the letter 
+2. It changes the syntax 
+3. I changed the mem to 67 and it became a 
+4. I changed the mem to 68 and it become b
+5. I changed the mem to 69 and it became c
+
