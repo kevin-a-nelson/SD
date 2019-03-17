@@ -7,7 +7,7 @@ using namespace std;
      unsigned char blue;
  };
 
- void write_ppm(char *format_name, int x, int y, int range,unsigned char *data)
+void write_ppm(char *format_name, int x, int y, int range,unsigned char *data)
 {
     cout.write((char *)data, 3 * x * y);
 }
@@ -21,7 +21,7 @@ int main() {
     cin >> x >> y >> range;
     cin.get();
 
-    // format_name = P6
+    // format_name = P3
     // x = 506
     // y = 336
 
@@ -36,25 +36,17 @@ int main() {
     }
 
     format_name[0] = 'P';
-    format_name[1] = '6';
+    format_name[1] = '3';
 
     cout << format_name << "\n";
     cout << x << " " << y << endl;
     cout << range << endl;
 
     for(int i = 0; i < y; i++){
-            // cout.write((char*)&image[i][n].red, 1);
-            // cout.write((char*)&image[i][n].green, 1);
-            // cout.write((char*)&image[i][n].blue, 1);
-        cout.write( (char *) image[i], x*sizeof(Pixel) );
+        for(int n = 0; n < x; n++){
+            cout << (int)image[i][n].red << " " << (int)image[i][n].green << " " << (int)image[i][n].blue << "  ";
+        }
     }
-
-
-
-
-
-    cout << "\n";
-
 
     return 0;
 }
