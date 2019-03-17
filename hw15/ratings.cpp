@@ -37,10 +37,10 @@ class Rating{
         cout << id << ":";
         for(int i = 0; i<stars;i++){
             cout << "*";
-        }
-        for(int i = 0; i<stars;i++){
-            cout << "";
         } cout << " ";
+        // for(int i = 0; i<stars;i++){
+        //     cout << "";
+        // } cout << " ";
     }
 
 };
