@@ -33,11 +33,11 @@ class Rating{
     int get_stars(){
         return stars;
     }
-    void display(){
+    void display(std::ostream &os){
         cout << id << ":";
         for(int i = 0; i<stars;i++){
-            cout << "*";
-        } cout << " ";
+            os << "*";
+        } os << " ";
         // for(int i = 0; i<stars;i++){
         //     cout << "";
         // } cout << " ";
@@ -47,7 +47,7 @@ class Rating{
 
 int main(){
     Rating r(1234, 3);
-    cout << "Rating r contains ";   r.display();  cout << endl;
+    cout << "Rating r contains ";   r.display(cout);  cout << endl;
     r.set_stars(4);
     cout << "After r.set_stars(4), id=" << r.get_id()
         << " and stars=" << r.get_stars() << endl;
@@ -58,7 +58,7 @@ int main(){
         arr[i] = new Rating(100+i, i);
     cout << "Ratings in array arr:  ";
     for (i = 0;  i < 8;  i++)
-        arr[i]->display(); cout << "  ";
+        arr[i]->display(cout); cout << "  ";
     cout << endl;
 
 
