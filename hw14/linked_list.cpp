@@ -55,16 +55,14 @@
  }
 
  // TODO add_head
-
- void add_head(LinkedList &ll,int dataValue){
-    IntNode * temp = new IntNode;
-    temp->next = ll.head;
-    ll.head = temp;
-    ll.head->data=1;
-    for(int i=0;ll.size;i++){
-        temp->next->data--;
-    }
-}
+ 
+ void add_head(LinkedList &ll, int dataVal) {
+     IntNode * tmp = new IntNode;
+     tmp->data = dataVal;
+     tmp->next = ll.head;
+     ll.head = tmp;
+     ll.size++;
+ }
 
  // remove the last IntNode in LinkedList, ll
  void remove_tail(LinkedList &ll) {
