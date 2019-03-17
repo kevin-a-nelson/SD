@@ -1,0 +1,9 @@
+A. 
+
+The pointer of Data(which is a int*) increases by 1
+
+B.
+
+It can be used to have true and false statments in a int array 
+
+
