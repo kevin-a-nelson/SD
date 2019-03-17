@@ -39,8 +39,8 @@ class Rating{
             cout << "*";
         }
         for(int i = 0; i<stars;i++){
-            cout << "  ";
-        }
+            cout << "";
+        } cout << " ";
     }
 
 };
