@@ -56,6 +56,10 @@ class Image
     int getWidth(){return width;}
     int getHeight(){return height;}
     void print();
+    void zeroRed();
+    void horizSqueeze();
+    void addBorder();
+    void greyScale();
 };
 
 #endif //_IMAGE_
