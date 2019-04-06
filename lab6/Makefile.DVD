@@ -1,8 +1,2 @@
-DVD.o:  DVD.cpp DVD.h
-	g++ -g -Wall -std=c++11 -c DVD.cpp
-
-DVDdriver.o: DVDdriver.cpp DVD.h
-	g++ -g -Wall -std=c++11 -c DVDdriver.cpp
-
-DVDdriver:  DVD.o DVDdriver.o
-	g++ -g -Wall -std=c++11 -o DVDdriver DVD.o DVDdriver.o
+a.out: proto_game.cpp sd_fun.h sd_fun.o str_util.o
+	g++ -g -Wall -std=c++11 proto_game.cpp sd_fun.o str_util.o
