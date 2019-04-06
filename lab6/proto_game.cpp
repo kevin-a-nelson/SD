@@ -59,9 +59,16 @@ void build_board(int offset, int button = -1) {
   // initialize pixels to dark grey
   for (int j = 0; j < 15; ++j)
   for (int i = 0; i < 15; ++i) {
-    mem[offset + 3*(15*j + i) + 0] = 25;
-    mem[offset + 3*(15*j + i) + 1] = 25;
-    mem[offset + 3*(15*j + i) + 2] = 25;
+    if(i%2 == 0){
+      mem[offset + 3*(15*j + i) + 0] = 200;
+      mem[offset + 3*(15*j + i) + 1] = 200;
+      mem[offset + 3*(15*j + i) + 2] = 200;
+    }
+    else{
+      mem[offset + 3*(15*j + i) + 0] = 100;
+      mem[offset + 3*(15*j + i) + 1] = 100;
+      mem[offset + 3*(15*j + i) + 2] = 100;
+    }
   }
   if (-1 != button) {
     // change one pixel
@@ -100,7 +107,7 @@ int main() {
       write_at(mem, 18, button);
     }
   }
-  build_board(100, button);
+  build_board(50, button);
 
   quit();
 }
