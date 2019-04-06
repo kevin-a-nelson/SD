@@ -1,0 +1,11 @@
+1. It was easier to reverse the stack because I could create a temp array. 
+
+        int temp[pos];
+        for(int i = 0; i < pos; i++){
+            temp[i] = numbers[pos-i-1];
+        }
+        for(int i = 0; i < pos; i++){
+            numbers[i] = temp[i];
+        }
+        
+    I can't make a temp array with nodes very easily
