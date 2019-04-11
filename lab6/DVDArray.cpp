@@ -11,7 +11,8 @@ DVDArray DVDArray::operator = (const DVDArray &darr){
     }
     return *this;
 }
-DVD DVDArray::operator [] (unsigned int index){
+
+DVD& DVDArray::operator [] (unsigned int index){
     if(index < size && index >= 0){
         return elt[index];
     } 
@@ -20,6 +21,7 @@ DVD DVDArray::operator [] (unsigned int index){
     }
     return elt[0];
 }
+
 unsigned int DVDArray::getSize()
 {
     return size;

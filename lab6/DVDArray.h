@@ -12,7 +12,7 @@ class DVDArray
     unsigned int size;
 
   public:
-    int DEFAULT_SIZE = 10;
+    int DEFAULT_SIZE = 3;
     DVDArray(unsigned int sz)
     {
         size = sz;
@@ -27,6 +27,7 @@ class DVDArray
             elt[i] = darr.elt[i];
         }
     }
+
     DVDArray(unsigned int sz, DVD * elem){
         size = sz;
         elt = new DVD[sz+1];
@@ -34,6 +35,7 @@ class DVDArray
             elt[i] = elem[i];
         }
     }
+    
     DVDArray()
     {
         size = DEFAULT_SIZE;
@@ -45,7 +47,7 @@ class DVDArray
     }
 
     DVDArray operator = (const DVDArray &darr);
-    DVD operator [] (unsigned int index);
+    DVD& operator [] (unsigned int index);
     unsigned int getSize();
     void display();
 };
