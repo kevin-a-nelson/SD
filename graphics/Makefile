@@ -1,6 +1,9 @@
+ShapeDriver2: Shape.o Rectangle.o Circle.o ShapeDriver2.o
+	g++ -g -Wall -std=c++11 -o ShapeDriver2 Rectangle.o Circle.o ShapeDriver2.o Shape.o
+
 ShapeDriver1: Shape.o Rectangle.o Circle.o ShapeDriver1.o
 	g++ -g -Wall -std=c++11 -o ShapeDriver1 Rectangle.o Circle.o ShapeDriver1.o Shape.o
-	
+
 ShapeDriver: Shape.o ShapeDriver.o
 	g++ -g -Wall -std=c++11 -o ShapeDriver Shape.o ShapeDriver.o
 
