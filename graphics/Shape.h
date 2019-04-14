@@ -3,6 +3,8 @@
 
 #include<iostream>
 #include"ColorPoint2.h"
+#include"sd_fun.h"
+
 using namespace std;
 
 class Shape{
@@ -12,23 +14,26 @@ public:
     Shape(){
         position.x = 0;
         position.y = 0;
-        color.red = 100;
-        color.blue = 100;
-        color.green = 100;
+        color.r = 50;
+        color.b = 50;
+        color.g = 50;
     }
+
     Shape(Point2 p){
         position = p;
-        color.red = 100;
-        color.blue = 100;
-        color.green = 100;
+        color.r = 50;
+        color.b = 50;
+        color.g = 50;
     }
+
     Shape(istream &is){
+        is >> color.r;
+        is >> color.b;
+        is >> color.g;
         is >> position.x;
         is >> position.y;
-        is >> color.red;
-        is >> color.blue;
-        is >> color.green;
     }
+
     Color getColor();
     Point2 getPostion();
     void setColor(Color c);
