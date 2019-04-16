@@ -1,12 +1,15 @@
+#ifndef _ColorPoint2_
+#define _ColorPoint2_
+
 #include<iostream>
 using namespace std;
 
 struct Color{
-    int red;
-    int green;
-    int blue;
+    int r;
+    int g;
+    int b;
     void display(){
-        cout << red << " " << green << " " << blue << "\n";
+        cout << r << " " << g << " " << b << "\n";
     }
 };
 
@@ -17,3 +20,5 @@ struct Point2{
         cout << x << " " << y << "\n";
     }
 };
+
+#endif
