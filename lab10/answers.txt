@@ -1,0 +1,143 @@
+2. The hieght of the tree is 3
+3. Florida 
+4. 3
+5. 
+6. The insert fuction decides where to put the node depending 
+upon the n and t value. if n <= t-> val then the child
+which is a treeNode ** child holds the value &t-> which is
+a treeNode *. Else the child holds the adress of 
+t-> right. Next if t-> left and t-> right don't have a 
+value (value of 0) then a child is created with 
+the arguments *child and n. Else if 0 is not child then
+we insert a child into the root *child recursively. 
+
+B.
+
+1. The dept of my tree is 4
+2. Bolivia, Denmark and Kingdom of Egypt
+3. The program goes through the tree untill its position
+is one less than its size. At this location it would 
+insert a node and increase the size of the nodes that 
+follow it by one. 
+4. you would go down the right side of the tree and print 
+out its values. Then you back up one size and then see 
+if theres a left leaf. Keep backing up and check if thesrs a unchecked
+left node/leaf untill you back at the top. Now repeat the 
+process for the left side of the root. 
+5. You would cycle through the values of the root as described
+above and at each value create a boolment operator saying
+if(value == current_node/leaf/root_value) then return
+current_node/leaf/root_value.
+
+10. The formula for finding index of the left child 
+of any node, using that node's index in the 
+array is 2n+1
+
+11. The formula for finding the right child is 
+2n+2
+
+12. The formula for finding the parrent node is 
+(n-1)/2
+
+13. With lists you wouldn't have pointers and 
+addres values assigned to those pointers. 
+
+15. 
+insert t 5 n 3
+insert t 5 n 4
+insert t 3 n 4
+insert t 5 n 0
+insert t 3 n 0
+insert t 5 n 8
+insert t 5 n 10
+insert t 8 n 10
+insert t 5 n 100
+insert t 8 n 100
+insert t 10 n 100
+insert t 5 n 9
+insert t 8 n 9
+insert t 10 n 9
+insert t 5 n 5
+insert t 3 n 5
+insert t 4 n 5
+remove t 5
+remove t 3
+remove t 0
+remove t 4
+remove t 5
+remove t 8
+remove t 10
+remove t 9
+remove t 100
+
+16.
+insert t 5 n 3
+insert t 5 n 4
+insert t 3 n 4
+insert t 5 n 0
+insert t 3 n 0
+insert t 5 n 8
+insert t 5 n 10
+insert t 8 n 10
+insert t 5 n 100
+insert t 8 n 100
+insert t 10 n 100
+insert t 5 n 9
+insert t 8 n 9
+insert t 10 n 9
+insert t 5 n 5
+insert t 3 n 5
+insert t 4 n 5
+remove t 5
+remove t 3
+remove t 0
+remove t 4
+remove t 5
+remove t 8
+remove t 10
+remove t 9
+remove t 100
+
+18. 
+insert t 5 n 3
+insert t 5 n 4
+insert t 3 n 4
+insert t 5 n 0
+insert t 3 n 0
+insert t 5 n 8
+insert t 5 n 10
+insert t 8 n 10
+insert t 5 n 100
+insert t 8 n 100
+insert t 10 n 100
+insert t 5 n 9
+insert t 8 n 9
+insert t 10 n 9
+insert t 5 n 5
+insert t 3 n 5
+insert t 4 n 5
+remove t 5
+remove t 3
+remove t 0
+remove t 4
+remove t 5
+remove t 8
+remove t 10
+remove t 9
+remove t 100
+
+21. 
+
+INORDER : yup constructable
+
+            Q
+           / \
+          Z   L 
+         /   / \
+        A    N  M
+       / \     / \
+      O   F   T  E  
+
+22. 
+
+
