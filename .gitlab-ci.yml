@@ -1,5 +1,3 @@
-image: stodevx/cs251-toolkit:latest
-build:
-    stage: build
-    script:
-        - cs251tk --ci --skip-web-compile
+image: docker.cs.stolaf.edu:443/sd_managers/sd-backend:latest
+gcloud:
+    script: "source /SD-backend/deploy.sh clever-cogency-240219"
